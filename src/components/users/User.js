@@ -13,7 +13,7 @@ const User = () => {
   const { id } = useParams();
 
   const loadUser = async () => {
-    const res = await axios.get(`http://localhost:3002/users/${id}`);
+    const res = await axios.get(`https://my-json-server.typicode.com/robygupta98/JsonServer/users/${id}`);
     setUser(res.data);
   };
   useEffect(() => {
@@ -21,7 +21,7 @@ const User = () => {
   }, []);
   return (
     <div className="container py-4">
-      <Link className="btn btn-primary" to="/">
+      <Link className="btn btn-primary" to="/reactJslivesite">
         back to Home
       </Link>
       <h1 className="display-4">User Id: {id}</h1>

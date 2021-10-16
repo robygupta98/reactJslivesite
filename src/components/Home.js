@@ -6,11 +6,11 @@ const Home = () => {
     const [users, setUsers] = useState([]);
   
     const loadUsers = async () => {
-        const result = await axios.get("http://localhost:3002/users");
+        const result = await axios.get("https://my-json-server.typicode.com/robygupta98/JsonServer/users");
         setUsers(result.data.reverse());
     }
     const deleteUser = async id => {
-        await axios.delete(`http://localhost:3002/users/${id}`);
+        await axios.delete(`https://my-json-server.typicode.com/robygupta98/JsonServer/users/${id}`);
         loadUsers();
     };
     useEffect(() => {

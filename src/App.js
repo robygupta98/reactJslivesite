@@ -17,7 +17,7 @@ function App() {
       <div className="App">
      <Navbar/>
      <Switch>
-     <Route exact path="/" component={Home} />
+     <Route exact path="/reactJslivesite" component={Home} />
      <Route exact path="/About" component={About} />
      <Route exact path="/Contect" component={Contect} />
      <Route exact path="/users/add" component={AddUser} />

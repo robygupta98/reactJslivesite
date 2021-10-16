@@ -21,12 +21,12 @@ const EditUser  = () => {
   
     const onSubmit = async e => {
       e.preventDefault();
-      await axios.put(`http://localhost:3002/users/${id}`, user);
-      history.push("/");
+      await axios.put(`https://my-json-server.typicode.com/robygupta98/JsonServer/users/${id}`, user);
+      history.push("/reactJslivesite");
     };
   
     const loadUser = async () => {
-      const result = await axios.get(`http://localhost:3002/users/${id}`);
+      const result = await axios.get(`https://my-json-server.typicode.com/robygupta98/JsonServer/users/${id}`);
       setUser(result.data);
     };
     useEffect(() => {

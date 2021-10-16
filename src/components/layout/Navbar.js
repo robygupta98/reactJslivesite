@@ -14,7 +14,7 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mr-auto">
                             <li className="nav-item active">
-                                <NavLink className="nav-link" exact to="/">Home </NavLink>
+                                <NavLink className="nav-link" exact to="/reactJslivesite">Home </NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link" exact to="/About">About</NavLink>

@@ -19,8 +19,8 @@ const AddUser = () => {
   
     const onSubmit = async e => {
       e.preventDefault();
-      await axios.post("http://localhost:3002/users", user);
-      history.push("/");
+      await axios.post("https://my-json-server.typicode.com/robygupta98/JsonServer/users", user);
+      history.push("/reactJslivesite");
     };
 
     return (
